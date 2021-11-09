@@ -8,7 +8,7 @@ async function run() {
 
     const date = new Date()
     const p = n => String(n).padStart(2, '0');
-    const dateString = `${p(date.getDay())}.${p(date.getMonth() + 1)}.${p(date.getFullYear())}`
+    const dateString = `${p(date.getDate())}.${p(date.getMonth() + 1)}.${p(date.getFullYear())}`
 
     const url = "https://www.lhv.ee/index/index.cfm?l3=et&id=10182&nocache=1"
     const response = await fetch(url);
